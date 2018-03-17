@@ -6,7 +6,7 @@ steps:
     
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: samples/databases/wide-world-importers/wwi-ssdt/wwi-ssdt/bin/Debug/WideWorldImporters.dacpac'
+    PathtoPublish: $(Build.SourcesDirectory)/samples/databases/wide-world-importers/wwi-ssdt/wwi-ssdt/bin/Debug/WideWorldImporters.dacpac'
     ArtifactName: theDacpac
     ArtifactType: Container
 
