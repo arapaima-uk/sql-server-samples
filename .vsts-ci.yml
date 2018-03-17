@@ -3,3 +3,11 @@ steps:
   displayName: Build the database project
   inputs:
     solution: samples/databases/wide-world-importers/wwi-ssdt/wwi-ssdt/WideWorldImporters.sqlproj
+    
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: samples/databases/wide-world-importers/wwi-ssdt/wwi-ssdt/bin/Debug/WideWorldImporters.dacpac'
+    ArtifactName: theDacpac
+    ArtifactType: Container
+
+
