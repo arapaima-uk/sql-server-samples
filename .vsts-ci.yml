@@ -2,11 +2,11 @@ steps:
 - task: MSBuild@1
   displayName: Build the database project
   inputs:
-    solution: samples/databases/wide-world-importers/wwi-ssdt/wwi-ssdt/WideWorldImporters.sqlproj
+    solution: 'samples/databases/wide-world-importers/wwi-ssdt/wwi-ssdt/WideWorldImporters.sqlproj'
     
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: $(Build.SourcesDirectory)/samples/databases/wide-world-importers/wwi-ssdt/wwi-ssdt/bin/Debug/WideWorldImporters.dacpac'
+    PathtoPublish: 'samples/databases/wide-world-importers/wwi-ssdt/wwi-ssdt/bin/Debug/WideWorldImporters.dacpac'
     ArtifactName: theDacpac
     ArtifactType: Container
 
